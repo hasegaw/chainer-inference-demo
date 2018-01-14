@@ -1,0 +1,110 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#log{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    width: 100%;
+    margin: 0;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    padding: 1.0em 0 1.0em;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+}
+
+h1 .model{
+    font-size:60%;
+}
+
+.column1 h1{
+  border-top: 20px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
+  background: url(./koukaryoku_logo.png);
+  background-repeat: no-repeat;
+  background-position: 22% 45%;
+}
+
+.column2 h1{
+  border-top: 20px solid #666666;
+  border-bottom: 2px solid #666666;
+}
+
+
+.column_top {
+    width: 2000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.column_top article{
+    flex: 1;
+    border-right: 3px solid #333;
+    padding: 0 20px;
+}
+
+.column_top article:last-child{
+  border-right: none;
+}
+
+.holder {
+    width: 930px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    height: 550px;
+    overflow: visible;
+}
+
+canvas
+{
+    margin: 2px;
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+
+.status{
+    height: 300px;
+    overflow: hidden;
+}
+
+.status_top {
+    width: 750px;
+    height: 220px;
+    margin: 0 auto;
+    padding: 1.5em 0.5em;
+    background-color: #000000;
+    font-size: 12pt;
+    // color: red;
+    text-align: center;
+    line-height: 2;
+    filter:alpha(opacity=85);
+    -moz-opacity: 0.85;
+    opacity: 0.85;
+    color: white;
+    border: 3px solid #333333;
+    border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+}
+
+/*
+.column1 .status_top {
+  border: 3px solid #ff0000;
+}
+
+.column2 .status_top {
+  border: 3px solid #333;
+}
+*/
+
+.status {
+    font-size: 300%;
+}

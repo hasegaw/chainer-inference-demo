@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>高火力デモ</title>
+<link href="frontend.css" rel="stylesheet" type="text/css">
+</head>
+<body id="body">
+<div class="column_top">
+  <article class="column1" stlye="width: 1500px">
+    <h1>Chainer 推論デモンストレーション</h1>
+    <div id="service1" class="holder" style="width: 1880px"></div>
+    <div class="status_top">現在のスループット<br>
+        <div id="service1_status" class="status"></div>
+    </div>
+  </article>
+</div>
+
+<div id="log"></div>
+
+
+<div id="summary" width="1200">
+</div>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script  src="frontend_conf.js"></script>
+<script  src="frontend_core.js"></script>
+<script  src="frontend_source_websocket.js"></script>
+
+<script>
+
+init_websocket(URL_WEBSOCKET, {
+    'holder': document.getElementById("service1"),
+    'status_div': document.getElementById("service1_status"),
+    'cols': 24,
+    'rows': 6
+})
+
+</script>
+</body>
+</html>
